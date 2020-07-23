@@ -1,7 +1,7 @@
 {
-  "name": "gulp-example",
+  "name": "shopgiay_platform",
   "version": "1.0.0",
-  "description": "frontend-build",
+  "description": "frontend of shopgiay",
   "main": "index.js",
   "scripts": {
     "buld": "gulp build",
@@ -15,15 +15,17 @@
     "gulp": "^4.0.2",
     "gulp-cache": "^1.1.3",
     "gulp-connect": "^5.7.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-file-include": "^2.2.2",
+    "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^4.0.1",
+    "gulp-watch": "^5.0.1",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "gulp-cssnano": "^2.1.3",
-    "gulp-file-include": "^2.2.2",
     "gulp-include-file": "^0.1.1"
   }
 }

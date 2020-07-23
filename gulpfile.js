@@ -21,7 +21,7 @@ gulp.sources = {
 gulp.task('connect:dev', () => {
     connect.server({
       root: [gulp.sources.dev, './'],
-      livereload: true,
+      livereload: false,
       port: 9000,
       host: '0.0.0.0',
       fallback: gulp.sources.dev + '/index.html'
@@ -39,27 +39,27 @@ gulp.task('sass',function () {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(sass())
     .pipe(gulp.dest(gulp.sources.src+'/css/'))
-    .pipe(connect.reload());
+
     
 });
 
 gulp.task('css',function(){
   return gulp.src(gulp.sources.src+'/css/**/*.css')
   .pipe(gulp.dest(gulp.sources.dev+'/css/'))
-  .pipe(connect.reload());
+
 
 })
 gulp.task('html',function(){
   return gulp.src(gulp.sources.src+'/**/*.html')
   .pipe(gulp.dest(gulp.sources.dev+'/'))
-  .pipe(connect.reload());
+
  
 })
 
 gulp.task('js',function(){
   return gulp.src(gulp.sources.src+'/js/**/*.js')
   .pipe(gulp.dest(gulp.sources.dev+'/js/'))
-  .pipe(connect.reload());
+
 
 })
 
@@ -131,7 +131,7 @@ gulp.task('fileincludedev', () => {
       basepath: '@file'
     }))
     .pipe(gulp.dest(gulp.sources.dev))
-    .pipe(connect.reload());
+
 });
 
 gulp.task('run:dev',()=>{
