@@ -1,0 +1,29 @@
+{
+  "name": "gulp-example",
+  "version": "1.0.0",
+  "description": "frontend-build",
+  "main": "index.js",
+  "scripts": {
+    "buld": "gulp build",
+    "run:dev": "gulp run:dev"
+  },
+  "author": "viettks@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-connect": "^5.7.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-cssnano": "^2.1.3",
+    "gulp-file-include": "^2.2.2",
+    "gulp-include-file": "^0.1.1"
+  }
+}
