@@ -1,17 +1,52 @@
-.header{
+.menu-label{
+    font-family: Roboto Condensed;
+    font-weight: 700
+    
+    ;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
+.menu{
+    position: relative;
+    top: 50%;
+}
+.rigth-menu{
+    position: relative;
+    top: 45%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 1px;
+    li{
+        padding: 0px 10px 0px 10px;
+    }
+}
+li{
+    display: inline;
+}
+.header-container{
     width: 100%;
     height: 100px;
-    background-color: white;
 }
-*{
-    font-family: Roboto Condensed;
-    font-style: normal;
-    letter-spacing: 0px;
-    font-size: 16px;
-    line-height: 20px;
+.logo-wrapper{
+    overflow: hidden;
+    .logo{
+        position: absolute;
+       
+        img{
+            width: 200px;
+            height: auto;
+
+        }
+    }
 }
-.menu-label{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+.slider-bar{
+    background-image: url("/img/sneaker-slide1.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }

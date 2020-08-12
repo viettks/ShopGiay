@@ -77,7 +77,8 @@ gulp.task('build', function(done) {
       'sass',
       'js',
       'html',
-      'fileincludedev'
+      'fileincludedev',
+      'images'
 
   )(done)});
 
@@ -135,7 +136,7 @@ gulp.task('fileincludedev', () => {
 });
 
 gulp.task('run:dev',()=>{
-  gulp.series('clean')(gulp.parallel([ 'connect:dev', 'html','fileincludedev','js','css','sass', 'stream'], 'browser-sync', () => {
+  gulp.series('clean')(gulp.parallel([ 'connect:dev', 'html','fileincludedev','js','css','sass', 'stream','images'], 'browser-sync', () => {
     console.log('Development version is running...');
   }));
 });
