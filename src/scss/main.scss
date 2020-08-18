@@ -12,6 +12,9 @@
 .menu{
     position: relative;
     top: 50%;
+    li{
+        display: inline;
+    }
 }
 .rigth-menu{
     position: relative;
@@ -20,12 +23,11 @@
     text-align: center;
     font-weight: 1px;
     li{
+        display: inline;
         padding: 0px 10px 0px 10px;
     }
 }
-li{
-    display: inline;
-}
+
 .header-container{
     width: 100%;
     height: 100px;
@@ -43,10 +45,87 @@ li{
     }
 }
 .slider-bar{
-    background-image: url("/img/sneaker-slide1.jpg");
-    background-repeat: no-repeat;
+   
     height: 500px;
     background-position: bottom;
+   
+   
+}
+.header-content{
+    background-image: url("/img/sneaker-slide2.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% auto;
+}
+.carousel-indicators{
+    li{
+        width: 70px !important;
+        height: 10px !important;
+      
+    }
+    
+}
+ol{
+    margin-bottom: 4rem !important;
+}
+.slide-content{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.label-silde{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.banner-item{
+    height: auto;
+    padding: 50px;
+   overflow: hidden;
+   img{
+       width: 100%;
+       height: auto;
+   }
+}
+.feature-item{
+    text-align: center;
+    border-left: 1px solid red($color: #000000);
+}
+.sale-off{
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: 1px solid #000000 ;
+}
+.product-header{
+    text-align: center;
+}
+.product-img{
+    width: 277px;
+    height: 317px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        padding: 5px;
+    }
+}
+.product-item {
+    padding: 5px;
+    
+}
+.product-des{
+    padding: 5px;
+}
+.footer-info{
+    clear:both;
+}
+li{
+  list-style: none;
+}
+.list-icons{
+    li{
+        display: inline;
+    }
 }
